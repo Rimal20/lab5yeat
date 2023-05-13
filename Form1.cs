@@ -28,8 +28,9 @@ namespace WindowsFormsApp1
                 User user = new User(textBox1.Text, this.GetHashString(textBox2.Text), textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, textBox10.Text, textBox11.Text);
                 db.Users.Add(user);
                 db.SaveChanges();
-                MessageBox.Show("Регистрация успешна");
+                
             }
+            MessageBox.Show("Регистрация успешна");
         }
         private string GetHashString(string s)
         {
@@ -49,6 +50,11 @@ namespace WindowsFormsApp1
             Form2 form2 = new Form2();
             this.Hide();
             form2.Show();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

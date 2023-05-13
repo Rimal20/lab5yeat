@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MailAddress from = new MailAddress("himi.s@mail.ru", "Denis");
+            MailAddress from = new MailAddress("utkadak9@mail.ru", "Rimal");
             MailAddress to = new MailAddress(textBox1.Text);
             MailMessage m = new MailMessage(from, to);
             m.Subject = "Тест";
