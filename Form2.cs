@@ -61,14 +61,14 @@ namespace WindowsFormsApp1
             return hash;
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form1 form1 = new Form1();
             this.Hide();
             form1.Show();
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabel2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form3 form3 = new Form3();
             this.Hide();
