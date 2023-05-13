@@ -34,15 +34,15 @@ namespace WindowsFormsApp1
                     if (textBox1.Text == user.Email)
                     {
                         string newPasword = GeneratePass();//создаем новую переменную
-                        m.Body = "<h1>Пароль: " + newPasword + "</h1>";//отпралвяет письмо на почту(текст)
+                        m.Body = "<h1>Пароль: " + newPasword + "</h1>";//отпралвяет письмо на почту(тектс)
                         user.Password = GetHashString(newPasword);//хэшируем новый пароль
-                        MessageBox.Show("Пароль отправлен на почту");//проверка простая
+                        MessageBox.Show("пароль отправлен на почту");//проверка 
                     }
                 }
                 db.SaveChanges();//cохраняем новый пароль в бд
             }
             m.IsBodyHtml = true;
-            SmtpClient smtp = new SmtpClient("utkadak9@mail.ru", 587);
+            SmtpClient smtp = new SmtpClient("smtp.mail.ru", 587);
             smtp.Credentials = new NetworkCredential("utkadak9@mail.ru", "eU9VuBc2Jb5EHx9mp8cq");
             smtp.EnableSsl = true;
             smtp.Send(m);
