@@ -7,6 +7,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -41,11 +42,6 @@ namespace WindowsFormsApp1
                 hash += string.Format("{0:x2}", b);
             }
             return hash;
-        }
-
-        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
